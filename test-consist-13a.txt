@@ -1,0 +1,1 @@
+CONSIST-13: Conflicting ticket types - commit 1
