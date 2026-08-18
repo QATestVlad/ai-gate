@@ -1,0 +1,13 @@
+# Managed by CodeROI (coderoi bootstrap) - do not edit.
+# Installs the CodeROI CLI in the hosted Copilot coding agent environment.
+name: Copilot Setup Steps
+on: workflow_dispatch
+jobs:
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install CodeROI CLI
+        run: npm i -g @coderoi/cli
